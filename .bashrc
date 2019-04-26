@@ -7,11 +7,13 @@ color4="\[\033[00m\]"
 
 function get_git_branch {
 
-    git_branch=$(git branch | grep \* | cut -d' ' -f2 2> /dev/null) || return
-    echo $git_branch
+    git_branch=$(git branch 2> /dev/null) || return
+    echo "$git_branch" | grep \* | cut -d' ' -f2
 }
 
-export PS1="$color1$(date +%H:%M) [\u@\h$color2:$color3\W] ($(get_git_branch))$color4\$ "
+get_git_branch
+
+setps1='export PS1="$color1$(date +%H:%M) [\u@\h$color2:$color3\W] $(get_git_branch)$color4\$ "'
 
 export HISTCONTROL=ignoredups:erasedups
 export HISTSIZE=500
@@ -19,4 +21,4 @@ export HISTFILE=~/.bash_history
 export HISTFILESIZE=1000
 shopt -s histappend
 
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -n; history -w; history -c; history -r"
+export PROMPT_COMMAND="history -n; history -w; history -c; history -r;$setps1"

@@ -215,42 +215,22 @@ vim test_args.sh
 vim .bash_profile
 mkdir foo
 cd foo
-vim ~/.bashrc
-. ~/.bashrc
-vim ~/.bashrc
-. ~/.bashrc
-vim ~/.bashrc
 man PS1
 man PROMPTING
-vim ~/.bashrc
-. ~/.bashrc
 cd Downloads/foo
-vim ~/.bashrc
-. ~/.bashrc
 ls -R
 man ls
 vim ~/.bash_logout 
 vim ~/.bash_profile 
 vim ~/.bash_history 
-vim ~/.bashrc
 vim ~/.bash_profile 
-vim ~/.bashrc
-vim ~/.bashrc
 :q
-vim ~/.bashrc
-vim ~/.bashrc
 cp .bashrc .bashrc_popos
-vim ~/.bashrc
 vim ~/.bash_aliase
 vim ~/.bash_aliases
-vim ~/.bashrc
 ls .bash*
-vim .bash_aliases 
 vim .bash_profile 
 mv .bashrc_popos Downloads/
-vim ~/.bashrc
-vim ~/.bashrc
-vim ~/.bashrc
 cd foo
 bashrc
 vim .bash_aliases
@@ -259,7 +239,6 @@ vim .bash_aliases
 man bashrc
 vim Downloads/.bashrc_popos 
 bashrc
-vim .bash_aliases 
 git
 vim
 nvim
@@ -313,13 +292,10 @@ cd bundle/
 debian_chroot
 vim .vimrc
 vim .vimrc
-vim .bash_aliases 
 vim .vimrc
 ls .vim
 git init
-git add .bashrc
 git add .vimrc
-git add .bash_aliases 
 vim .bash_logout 
 git add .bash_logout
 git add .bash_profile 
@@ -343,7 +319,6 @@ git remote add origin git@github.com:KrazyKode101/bash_utils.git
 git push --help
 git push -u origin master
 touch .bash_history
-git add .bash_history 
 git commit -m "adding bash_history"
 git config --global --edit
 git config --global --edit
@@ -394,16 +369,42 @@ ls /dev
 cd .vim/bundle/ctrlp.vim/
 ls .git
 cd ~
-git branch
-git branch 2> /dev/null
-cd karthik/
 echo $PROMPT
 vim .bashr
+git add .bash_history 
+git commit -m "rev at $(date +%H:%M)"
+git add .bash_aliases 
+vim .bash_aliases 
+git_home_commit
+git log
+git_home_commit 
+git push origin master
+cd 
+ls -ltr
+vim .bashrc
 echo $PS1
+. .bashrc
+git branch
+git branch 2> /dev/null
+git branch 2> /dev/null | grep *
+git branch 2> /dev/null | grep * | cut -d' ' -f2
+echo $?
+. .bashrc
+git branch
+git branch 2> /dev/null
+git branch 2> /dev/null | grep *
+git branch 2> /dev/null | grep * | cut -d' ' -f2
+echo $?
+vim ~/.bashrc
+. ~/.bashrc
+cd DOw
 cd Downloads/
 cd ..
-vim .bashrc
-. .bashrc
-ls
+cd karthik/
+cleat
+cd ka
 clear
+ls
 git status
+git .bashrc
+git add .bashrc
