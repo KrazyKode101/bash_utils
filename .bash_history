@@ -371,7 +371,6 @@ cd ~
 echo $PROMPT
 vim .bashr
 git commit -m "rev at $(date +%H:%M)"
-vim .bash_aliases 
 git_home_commit
 git log
 cd 
@@ -402,16 +401,18 @@ git add .bashrc
 git add .bash_history 
 git_home_commit 
 git push origin master
-. ~/.bashrc
 vim ~/bashrc
 vim ~/.bashrc
 alias
-type sync_bash_home
 vim ~/.bash_logout
 sync_bash_home 
-vim ~/.bash_aliases 
 clear
 vim ~/.bash_logout 
+git add .bash_history
+sync_bash_home
+vim .bash_aliases 
+type sync_bash_home
+. ~/.bashrc
+vim ~/.bash_aliases 
 git status
 git add .bash_aliases 
-git add .bash_history
