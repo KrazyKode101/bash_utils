@@ -7,7 +7,7 @@ color4="\[\033[00m\]"
 
 function get_git_branch {
 
-    git_branch=$(git branch | grep \* | cut -d' ' -f2) || return
+    git_branch=$(git branch | grep \* | cut -d' ' -f2 2> /dev/null) || return
     echo $git_branch
 }
 
