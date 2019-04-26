@@ -220,7 +220,6 @@ man PROMPTING
 cd Downloads/foo
 ls -R
 man ls
-vim ~/.bash_logout 
 vim ~/.bash_profile 
 vim ~/.bash_history 
 vim ~/.bash_profile 
@@ -397,19 +396,22 @@ cd ..
 cd karthik/
 cleat
 cd ka
-clear
 ls
-git status
 git .bashrc
 git add .bashrc
 git add .bash_history 
-git add .bash_aliases 
 git_home_commit 
 git push origin master
-vim ~/.bash_aliases 
 . ~/.bashrc
 vim ~/bashrc
 vim ~/.bashrc
 alias
 type sync_bash_home
 vim ~/.bash_logout
+sync_bash_home 
+vim ~/.bash_aliases 
+clear
+vim ~/.bash_logout 
+git status
+git add .bash_aliases 
+git add .bash_history
