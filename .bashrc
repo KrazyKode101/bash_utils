@@ -11,8 +11,6 @@ function get_git_branch {
     echo "$git_branch" | grep \* | cut -d' ' -f2
 }
 
-get_git_branch
-
 setps1='export PS1="$color1$(date +%H:%M) [\u@\h$color2:$color3\W] $(get_git_branch)$color4\$ "'
 
 export HISTCONTROL=ignoredups:erasedups
@@ -20,5 +18,4 @@ export HISTSIZE=500
 export HISTFILE=~/.bash_history
 export HISTFILESIZE=1000
 shopt -s histappend
-
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r;$setps1"

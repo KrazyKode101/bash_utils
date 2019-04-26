@@ -371,14 +371,10 @@ ls .git
 cd ~
 echo $PROMPT
 vim .bashr
-git add .bash_history 
 git commit -m "rev at $(date +%H:%M)"
-git add .bash_aliases 
 vim .bash_aliases 
 git_home_commit
 git log
-git_home_commit 
-git push origin master
 cd 
 ls -ltr
 vim .bashrc
@@ -395,8 +391,6 @@ git branch 2> /dev/null
 git branch 2> /dev/null | grep *
 git branch 2> /dev/null | grep * | cut -d' ' -f2
 echo $?
-vim ~/.bashrc
-. ~/.bashrc
 cd DOw
 cd Downloads/
 cd ..
@@ -408,3 +402,14 @@ ls
 git status
 git .bashrc
 git add .bashrc
+git add .bash_history 
+git add .bash_aliases 
+git_home_commit 
+git push origin master
+vim ~/.bash_aliases 
+. ~/.bashrc
+vim ~/bashrc
+vim ~/.bashrc
+alias
+type sync_bash_home
+vim ~/.bash_logout
