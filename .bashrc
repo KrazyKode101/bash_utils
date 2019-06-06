@@ -19,3 +19,4 @@ export HISTFILE=~/.bash_history
 export HISTFILESIZE=1000
 shopt -s histappend
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r;$setps1"
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
