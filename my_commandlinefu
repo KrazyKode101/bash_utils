@@ -1,0 +1,2 @@
+#Find the five folders in a given directory consuming the most space.
+du -ks $(ls -d */) | sort -nr | cut -f2 | xargs du -sh 2> /dev/null | head -5
