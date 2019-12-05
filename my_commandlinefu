@@ -24,9 +24,11 @@ dpkg -i xyz.deb
 #check dns response
 host|dig|nslookup www.google.com
 
+#network monitoring
 traceroute google.com
 ping google.com
 ip addr show
 ip route show
 netstat -rn #r: show kernel routing table, n: show numeric names
 nc -zv localhost 80 #z is for scan for listening daemons without sending any data, v is for verbose
+lsof -i :80
