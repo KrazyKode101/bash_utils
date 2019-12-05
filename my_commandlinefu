@@ -9,3 +9,9 @@ sudo apt autoremove #removes dependencies of the purged pkg
 #searching pkgs
 sudo apt-cache search pattern
 sudo apt-cache showpkg pkgname #show general info about the pkg
+
+#dpkg
+dpkg -l
+dpkg -S $(which python)
+dpkg -s python-minimal
+dpkg -i xyz.deb
