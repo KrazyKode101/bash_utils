@@ -11,7 +11,22 @@ sudo apt-cache search pattern
 sudo apt-cache showpkg pkgname #show general info about the pkg
 
 #dpkg
-dpkg -l
+dpkg -l #list installed pkgs
 dpkg -S $(which python)
 dpkg -s python-minimal
 dpkg -i xyz.deb
+
+#private-ipaddress range
+192.168.0.0|16
+172.16.0.0|12
+10.0.0.0|8
+
+#check dns response
+host|dig|nslookup www.google.com
+
+traceroute google.com
+ping google.com
+ip addr show
+ip route show
+netstat -rn #r: show kernel routing table, n: show numeric names
+nc -zv localhost 80 #z is for scan for listening daemons without sending any data, v is for verbose
