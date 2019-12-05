@@ -32,3 +32,7 @@ ip route show
 netstat -rn #r: show kernel routing table, n: show numeric names
 nc -zv localhost 80 #z is for scan for listening daemons without sending any data, v is for verbose
 lsof -i :80
+
+#get hexadecimal output of a file
+hexdump -x file.txt | tr -s ' ' | cut -d' ' -f2-9 | tr -d ' \n'
+cmp --silent file1.txt file2.txt || echo "files are different"
