@@ -1,6 +1,11 @@
 #Find the five folders in a given directory consuming the most space.
 du -ks $(ls -d */) | sort -nr | cut -f2 | xargs du -sh 2> /dev/null | head -5
 
+#removing pkgs
 sudo apt remove pkgname #doesn't remove configuration files
 sudo apt purge pkgname #removes configuration files(except which is in home folder)
 sudo apt autoremove #removes dependencies of the purged pkg
+
+#searching pkgs
+sudo apt-cache search pattern
+sudo apt-cache showpkg pkgname #show general info about the pkg
