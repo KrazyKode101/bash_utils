@@ -1,3 +1,0 @@
-git pull remote_name branch_name
-git prune remote remote_name
-git clean -f -d
